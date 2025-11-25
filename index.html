@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sibiya Xolile Ziyanda — Portfolio</title>
+  <meta name="description" content="Portfolio of Sibiya Xolile Ziyanda — IT student & web developer. Projects, skills, resume and contact." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#4f46e5;--glass:rgba(255,255,255,0.04);--glass-2:rgba(255,255,255,0.02)}
+    *{box-sizing:border-box}html,body{height:100%}body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:linear-gradient(180deg,#071028 0%, #0f1724 100%);color:#e6eef8;line-height:1.5}
+    .container{max-width:1100px;margin:36px auto;padding:24px}
+    .top{display:flex;gap:24px;align-items:center}
+    .avatar{width:128px;height:128px;border-radius:16px;background:linear-gradient(135deg,#334155,#0ea5a9);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;color:white;flex-shrink:0}
+    .intro h1{margin:0;font-size:28px;letter-spacing:0.2px}
+    .tag{color:var(--accent);font-weight:600;margin-top:6px}
+    .bio{color:var(--muted);margin-top:12px;max-width:70ch}
+
+    /* layout */
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:22px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr} .avatar{width:96px;height:96px;border-radius:12px}}
+
+    /* card */
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:18px;box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+
+    /* sections */
+    h2{margin:0 0 12px 0;font-size:16px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:10px;color:var(--muted);font-weight:600;font-size:13px}
+
+    .projects{display:grid;gap:14px}
+    .proj{display:flex;gap:14px;align-items:flex-start}
+    .proj .thumb{width:110px;height:72px;border-radius:10px;background:var(--accent);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-weight:700}
+    .proj h3{margin:0;font-size:15px}
+    .proj p{margin:6px 0 0;color:var(--muted);font-size:13px}
+
+    .meta{display:flex;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:13px}
+
+    /* contact */
+    .contact-form{display:flex;flex-direction:column;gap:10px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:inherit;font-size:14px}
+    textarea{min-height:110px;resize:vertical}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
+
+    /* footer */
+    footer{margin-top:28px;color:var(--muted);text-align:center;font-size:13px}
+
+    /* small utilities */
+    .row{display:flex;gap:12px;align-items:center}
+    .link{color:inherit;text-decoration:none;border-bottom:1px dashed rgba(255,255,255,0.03);padding-bottom:2px}
+
+    /* animated entrance */
+    .fade-up{transform:translateY(8px);opacity:0;animation:fadeUp .7s ease forwards}
+    @keyframes fadeUp{to{transform:none;opacity:1}}
+
+    /* resume badge */
+    .resume-badge{background:var(--glass-2);padding:6px 10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top card fade-up" style="display:flex;justify-content:space-between;align-items:center">
+      <div style="display:flex;gap:18px;align-items:center">
+        <div class="avatar">SX</div>
+        <div class="intro">
+          <h1>Sibiya Xolile Ziyanda</h1>
+          <div class="tag">IT Student • Web Developer • Aspiring Software Engineer</div>
+          <p class="bio">I build practical and user‑friendly web applications with an emphasis on PHP & MySQLi, HTML, CSS and JavaScript.
+              Currently an Associate Degree Graduate eager to solve real‑world problems through software.
+              I enjoy clean code, good UI and continuous learning. I am also good in networking and have mastered a lot of networking skills.</p>
+          <div class="meta" style="margin-top:12px">
+            <div class="resume-badge">Download Resume — <a class="link" href="/resume.pdf" download>resume.pdf</a></div>
+            <div class="resume-badge"><a class="link" href="#79732281">Contact</a></div>
+            <div style="margin-left:8px">Location: Manzini, Eswatini</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <a class="link" href="#projects">Projects</a>
+        <a class="link" href="#skills">Skills</a>
+        <a class="link" href="#contact">Hire me</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <main>
+        <section id="projects" class="card fade-up">
+          <h2>Selected Projects</h2>
+          <div class="projects">
+            <article class="proj">
+              <div class="thumb">EV</div>
+              <div>
+                <h3>Event Profile System (PHP & MySQLi)</h3>
+                <p>A full event profile & management system with forms for invitations, ticketing, event websites and attendance tracking. Built with PHP, MySQLi and clean separated templates (HTML + PHP).</p>
+                <div class="meta">Roles: Developer • Backend: PHP/MySQLi • Frontend: HTML/CSS/JS</div>
+              </div>
+            </article>
+
+            <article class="proj">
+              <div class="thumb">SP</div>
+              <div>
+                <h3>Student Portal Dashboard</h3>
+                <p>Responsive dashboard for students to view assignments, grades and resources. Includes authentication and role‑based access.</p>
+                <div class="meta">Roles: Frontend & Backend • Tech: JavaScript, PHP</div>
+              </div>
+            </article>
+              
+              <article class="proj">
+              <div class="thumb">FOE</div>
+              <div>
+                <h3>Find Me Online Eswatini</h3>
+                <p>Responsive dashboard for users to place orders for profile creations, payments and uploading of proof of payments. Includes authentication and role‑based access.</p>
+                <div class="meta">Roles: Frontend & Backend • Tech: JavaScript, PHP, MYSQL and HTML</div>
+                <div class="">Project link — <a class="link" href="https://findmesz.com" >FindMeSZ</a></div>
+              </div>
+            </article>
+
+            <article class="proj">
+              <div class="thumb">PR</div>
+              <div>
+                <h3>Personal Portfolio Template</h3>
+                <p>Customizable portfolio template designed for professionals; includes smooth scroll, dark theme and contact form integration.</p>
+                <div class="meta">Roles: Designer • Developer • Tech: HTML/CSS/JS</div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="experience" class="card fade-up" style="margin-top:18px">
+          <h2>Experience & Education</h2>
+          <p style="color:var(--muted)"><strong>Internship:</strong> System Development Intern at Mela Africa — Manzini (2024).
+              Worked on web applications and tested deployment workflows.</p>
+          <p style="color:var(--muted)"><strong>Education:</strong> Associate Degree in Information Technology — Limkokwing University.</p>
+          <p style="color:var(--muted)"><strong>Notable:</strong> Strong focus on PHP, MySQL, front‑end design and accessibility.</p>
+        </section>
+
+        <section id="skills" class="card fade-up" style="margin-top:18px">
+          <h2>Skills</h2>
+          <div class="skills">
+            <div class="skill">PHP (MySQLi)</div>
+            <div class="skill">HTML & CSS</div>
+            <div class="skill">JavaScript (vanilla)</div>
+            <div class="skill">Java</div>
+            <div class="skill">C++</div>
+            <div class="skill">Responsive Design</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">SQL & Database Design</div>
+            <div class="skill">Basic Networking</div>
+            <div class="skill">Computer Hardware</div>
+            <div class="skill">Problem Solving</div>
+          </div>
+        </section>
+
+        
+
+      </main>
+
+      <aside>
+        <div class="card fade-up">
+          <h2>Contact</h2>
+          <p style="color:var(--muted)">Want to work together? Send a short message and I’ll reply.</p>
+          <form id="contact-form" class="contact-form" onsubmit="return handleForm(event)">
+            <input type="text" id="name" placeholder="Your name" required />
+            <input type="email" id="email" placeholder="Your email" required />
+            <input type="text" id="subject" placeholder="Subject" />
+            <textarea id="message" placeholder="Write your message..." required></textarea>
+            <button type="submit" class="btn">Send message</button>
+            <small id="status" style="color:var(--muted)"></small>
+          </form>
+          <div style="margin-top:14px">
+            <h2>Links</h2>
+            <div class="meta">
+              <a class="link" href="https://github.com/Xoli19978/xolilesibiya">GitHub </a>
+              <a class="link" href="https://www.linkedin.com/in/xolile-sibiya-9614892b3">LinkedIn </a>
+              <a class="link" href="Sibiya_Xolile_Ziyanda_CV.pdf">Download CV</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card fade-up" style="margin-top:14px">
+          <h2>Quick info</h2>
+          <div class="meta"><div>Email:</div><div>xolile.sibiya9732@gmail.com</div></div>
+          <div class="meta" style="margin-top:8px"><div>Phone:</div><div>+268 7973 2281 | 7842 2374</div></div>
+          <div class="meta" style="margin-top:8px"><div>Location:</div><div>Manzini, Eswatini</div></div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div>Made by <strong>Sibiya Xolile Ziyanda</strong> — © <span id="year"></span></div>
+    </footer>
+  </div>
+    <script src="https://cdnjsdeliver.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    // small interactive behaviour
+    document.getElementById('year').innerText = new Date().getFullYear();
+
+    (function(){
+        emaijs.init("hpNvKlI6pZ9btYQpH");
+    })();
+    
+    document.getElementById("contact-form").addEventListener("submit", function(e){
+        e.preventDefault();
+        
+        emailjs.sendForm("service_nm39dsa", "template_01v5js8", this)
+                .then(function(){
+                    arlet("Your Message has been sent successfully!");
+                }, function(error){
+                    arlet("Failed to send message. Please try again.");
+                    console.error(error);
+                });
+    });
+    
+    
+  </script>
+</body>
+</html>
