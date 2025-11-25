@@ -159,11 +159,11 @@
         <div class="card fade-up">
           <h2>Contact</h2>
           <p style="color:var(--muted)">Want to work together? Send a short message and I’ll reply.</p>
-          <form id="contact-form" class="contact-form" onsubmit="return handleForm(event)">
-            <input type="text" id="name" placeholder="Your name" required />
-            <input type="email" id="email" placeholder="Your email" required />
-            <input type="text" id="subject" placeholder="Subject" />
-            <textarea id="message" placeholder="Write your message..." required></textarea>
+          <form id="contact-form" class="contact-form" >
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Your email" required />
+            <input type="text" name="subject" placeholder="Subject" />
+            <textarea name="message" placeholder="Write your message..." required></textarea>
             <button type="submit" class="btn">Send message</button>
             <small id="status" style="color:var(--muted)"></small>
           </form>
