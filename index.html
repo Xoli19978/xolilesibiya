@@ -202,7 +202,7 @@
     document.getElementById("contact-form").addEventListener("submit", function(e){
         e.preventDefault();
         
-        emailjs.sendForm("service_nm39dsa", "template_01v5js8", this, "hpNvKJl6pZ9btYQpH")
+        emailjs.sendForm("service_nm39dsa", "template_01v5js8", form)
                 .then(function(){
                     alert("Your Message has been sent successfully!");
                 }, function(error){
