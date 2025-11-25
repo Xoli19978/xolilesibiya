@@ -204,9 +204,9 @@
         
         emailjs.sendForm("service_nm39dsa", "template_01v5js8", this)
                 .then(function(){
-                    arlet("Your Message has been sent successfully!");
+                    alert("Your Message has been sent successfully!");
                 }, function(error){
-                    arlet("Failed to send message. Please try again.");
+                    alert("Failed to send message. Please try again.");
                     console.error(error);
                 });
     });
