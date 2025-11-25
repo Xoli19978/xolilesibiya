@@ -196,13 +196,13 @@
     document.getElementById('year').innerText = new Date().getFullYear();
 
     (function(){
-        emailjs.init("hpNvKlI6pZ9btYQpH");
+        emailjs.init("hpNvKJl6pZ9btYQpH");
     })();
     
     document.getElementById("contact-form").addEventListener("submit", function(e){
         e.preventDefault();
         
-        emailjs.sendForm("service_nm39dsa", "template_01v5js8", this)
+        emailjs.sendForm("service_nm39dsa", "service_nm39dsa", this)
                 .then(function(){
                     alert("Your Message has been sent successfully!");
                 }, function(error){
